@@ -13,7 +13,7 @@
 <body>
 
     <div class="header">
-        <h2>Academic Webiste</h2>
+        <h2>Academic Website</h2>
     </div>
 
     <div class="d-flex justify-content-center mt-4">

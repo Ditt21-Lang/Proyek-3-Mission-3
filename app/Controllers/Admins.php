@@ -85,10 +85,10 @@ class Admins extends BaseController{
         $take = $takesModel->where('course_id', $id)->delete();
 
         if ($courseModel->delete($id)) {
-            return redirect()->to(base_url('admin/mahasiswa'))
+            return redirect()->to(base_url('admin/course'))
                 ->with('success', 'Data course berhasil dihapus!');
         } else {
-            return redirect()->to(base_url('admin/mahasiswa'))
+            return redirect()->to(base_url('admin/course'))
                 ->with('error', 'Data course gagal dihapus!');
         }
 

@@ -7,6 +7,11 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
+    <?php if (session()->getFlashdata('error')):?>
+        <div class="alert alert-danger text-center"   role="alert">
+            <p><?= session()->getFlashdata('error') ?></p>
+        </div>
+    <?php endif; ?>
     <div class="container">
         <div class="card shadow p-5 mt-5 text-center">
             <h1 class="fw-bold text-primary">Selamat Datang,  <?= esc(session()->get('full_name')) ?></h1>

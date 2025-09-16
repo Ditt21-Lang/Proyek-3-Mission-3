@@ -13,12 +13,12 @@
 <body>
 
     <div class="header">
-        <h2>Academic Webiste: Admin</h2>
+        <h2>Academic Website: Admin</h2>
     </div>
 
     <div class="d-flex justify-content-center mt-4">
         <div class="btn-group mt-3 mb-3 m-4" role="group" aria-label="Navigation button group">
-            <a href="<?= base_url('admin/dashboard') ?>" class="btn btn-outline-primary"> Home </a>
+            <a href="<?= base_url('admin/home') ?>" class="btn btn-outline-primary"> Home </a>
             <a href="<?= base_url('admin/mahasiswa') ?>" class="btn btn-outline-primary"> Mahasiswa </a>
             <a href="<?= base_url('admin/courses') ?>" class="btn btn-outline-primary"> Courses </a>
             <a href="<?= base_url('logout') ?>" class="btn btn-outline-primary"> Logout </a>

@@ -6,6 +6,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Home</title>
 </head>
+    <?php if (session()->getFlashdata('error')):?>
+        <div class="alert alert-danger text-center"   role="alert">
+            <p><?= session()->getFlashdata('error') ?></p>
+        </div>
+    <?php endif; ?>
      <div class="container">
         <div class="card shadow p-5 mt-5 text-center">
             <h1 class="fw-bold text-primary">Welcome, <?= esc(session()->get('full_name')) ?></h1>
@@ -15,7 +20,7 @@
     <div>
         <h2 class="text-center fw-bold mt-5 text-dark">My Courses</h2>
         <?php if(empty($courses)): ?>
-            <p>Kamu belum enroll course apapun</p>
+            <p class="text-center text-warning fw-bold mt-5">Kamu belum enroll course apapun</p>
         <?php else: ?>
             <table  class="table table-bordered table-striped-columns mx-auto mt-5" style="width: 50%;">
                 <tr>

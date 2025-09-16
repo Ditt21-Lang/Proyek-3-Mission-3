@@ -32,7 +32,7 @@ class Auth extends BaseController{
                 if ($user['role'] === 'student'){
                     return redirect('')->to(base_url('student/home'));
                 } else if ($user['role'] === 'atmint'){
-                    return redirect('')->to(base_url('admin'));
+                    return redirect('')->to(base_url('admin/home'));
                 }
 
             } else{
